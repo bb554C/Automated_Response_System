@@ -208,6 +208,7 @@ namespace COE114L_Projectv3
 
         //-PROPERTIES-\\
         //-START-\\
+
         public string prop_Password
         {
             get { return password; }
@@ -395,7 +396,7 @@ namespace COE114L_Projectv3
                 city_municipalityDB = splitter[9];
                 provinceDB = splitter[10];
                 countryDB = splitter[11];
-                permissionLevelDB = int.Parse(splitter[12]);
+                permissionLevelDB = Convert.ToInt32(splitter[12]);
                 index++;
             }
             TR.Close();
@@ -404,29 +405,17 @@ namespace COE114L_Projectv3
         public void TransferAccountsDBData()
         {
             prop_Username = prop_UsernameDB;
-            prop_UsernameDB = "";
             password = passwordDB;
-            passwordDB = "";
             email = emailDB;
-            emailDB = "";
             prop_FirstName = prop_FirstNameDB;
-            prop_FirstNameDB = "";
             prop_LastName = prop_LastNameDB;
-            prop_LastNameDB = "";
             gender = genderDB;
-            genderDB = "";
             line1 = line1DB;
-            line1DB = "";
             line2 = line2DB;
-            line2DB = "";
             baranggay_district = baranggay_districtDB;
-            baranggay_districtDB = "";
             city_municipality = city_municipalityDB;
-            city_municipalityDB = "";
             province = provinceDB;
-            provinceDB = "";
             country = countryDB;
-            countryDB = "";
             permissionLevel = permissionLevelDB;
         }
 

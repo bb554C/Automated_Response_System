@@ -133,8 +133,11 @@ namespace COE114L_Projectv3
         public void TransferIdentifierDBData()
         {
             username = usernameDB;
+            usernameDB = "";
             firstName = firstNameDB;
+            firstNameDB = "";
             lastName = lastNameDB;
+            lastNameDB = "";
         }
         //-END-\\
     }

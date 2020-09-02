@@ -63,7 +63,7 @@ namespace COE114L_Projectv3
                 A.TransferAccountsDBData();
                 A.WriteCurrentLoginTXT();
                 this.Hide();
-                ARSHomeForm ARSHF = new ARSHomeForm();
+                HomeForm ARSHF = new HomeForm();
                 ARSHF.Closed += (s, args) => this.Close();
                 ARSHF.Show();
             }
